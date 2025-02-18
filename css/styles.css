@@ -30,6 +30,38 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Estilos para la sección "Sobre mí" */
+.about-me-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: left;
+    animation: fadeInUp 1s ease-in-out; /* Reutiliza tu animación existente */
+}
+
+.about-me-section h2 {
+    font-size: 2em;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.about-me-section p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.about-me-section strong {
+    color: #000;
+    font-weight: bold;
+}
+
 /* Secciones */
 section {
     padding: 2rem;
