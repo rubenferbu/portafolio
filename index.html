@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Mi Portafolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#timeline">Mi Camino</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <p>Descripción breve sobre ti y tu evolución profesional.</p>
+    </section>
+    
+    <section id="timeline">
+        <h2>Mi Camino</h2>
+        <div class="timeline">
+            <div class="event">
+                <h3>Inicio</h3>
+                <p>Primeros pasos en el desarrollo web.</p>
+            </div>
+            <div class="event">
+                <h3>Primer Proyecto</h3>
+                <p>Desarrollé mi primera aplicación web.</p>
+            </div>
+            <div class="event">
+                <h3>Mejoras</h3>
+                <p>Implementación de nuevas tecnologías.</p>
+            </div>
+            <div class="event">
+                <h3>Actualidad</h3>
+                <p>Explorando nuevas tendencias en desarrollo web.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Proyecto 1</h3>
+                <p>Descripción del proyecto.</p>
+            </div>
+            <div class="project-card">
+                <h3>Proyecto 2</h3>
+                <p>Descripción del proyecto.</p>
+            </div>
+            <div class="project-card">
+                <h3>Proyecto 3</h3>
+                <p>Descripción del proyecto.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form action="php/send.php" method="POST">
+            <input type="text" name="name" placeholder="Tu Nombre" required>
+            <input type="email" name="email" placeholder="Tu Email" required>
+            <textarea name="message" placeholder="Tu Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Mi Nombre</p>
+    </footer>
+</body>
+</html>
+
