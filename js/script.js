@@ -24,3 +24,21 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+// Interruptor de tema
+const themeSwitch = document.querySelector('.theme-switch');
+
+// Función para cambiar el tema
+const setTheme = (theme) => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+};
+
+// Detectar el tema del sistema
+const currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+setTheme(currentTheme);
+
+// Cambiar tema al hacer clic
+themeSwitch.addEventListener('click', () => {
+    const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+});
