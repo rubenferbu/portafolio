@@ -45,14 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Crear etiquetas de tecnología con Shields.io
         let techBadges = '';
         project.technologies.forEach(tech => {
-            let techUrl = tech.replace(/ /g, '%20'); // Reemplazar espacios con %20
-
-            // Manejar el caso especial de C#
+            let techUrl = tech;
             if (tech === 'C#') {
-                techUrl = 'C%23';
+                techUrl = 'csharp';
             }
-
-            techBadges += `<img src="https://img.shields.io/badge/${techUrl}-blue?style=for-the-badge" alt="${tech}" class="tech-badge"> `;
+            techBadges += `<img src="https://img.shields.io/badge/${techUrl.replace(/ /g, '%20')}-blue?style=for-the-badge" alt="${tech}" class="tech-badge" loading="lazy"> `;
         });
 
         projectCard.innerHTML = `
